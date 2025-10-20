@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f6f7f9;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.tabs {
+  margin: 16px 0;
+}
+
+.tabs button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  margin-right: 6px;
+  border-radius: 6px;
+}
+
+.tabs button.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.view {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+}
+
+th {
+  background: #f0f0f0;
+}
+
+.kanban {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.column {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 8px;
+  min-height: 140px;
+  border: 1px solid #ddd;
+}
+
+.column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+
+.card .title {
+  font-weight: 600;
+  font-size: 13px;
+}
