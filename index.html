@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kanban Realtime - Supabase</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Supabase SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Kanban Realtime - Supabase</h1>
+      <p>List ⇄ Kanban sinkron otomatis. Edit di List, posisi di Kanban berubah realtime.</p>
+    </header>
+
+    <div class="tabs">
+      <button id="tab-list" class="active">List</button>
+      <button id="tab-kanban">Kanban</button>
+    </div>
+
+    <section id="view-list" class="view">
+      <table id="table-list">
+        <thead>
+          <tr>
+            <th>Requisition No</th>
+            <th>Aktivitas 1</th>
+            <th>Aktivitas 2</th>
+            <th>Aktivitas 3</th>
+            <th>Aktivitas 4</th>
+            <th>Aktivitas 5</th>
+            <th>Aktivitas 6</th>
+            <th>Last Updated</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-list"></tbody>
+      </table>
+    </section>
+
+    <section id="view-kanban" class="view hidden">
+      <div id="kanban-columns" class="kanban"></div>
+    </section>
+  </div>
+
+  <footer>Pastikan SUPABASE_URL & ANON_KEY di app.js sudah diisi.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
